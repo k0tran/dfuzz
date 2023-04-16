@@ -1,0 +1,2 @@
+target/*/bin/
+gen/__pycache__/
