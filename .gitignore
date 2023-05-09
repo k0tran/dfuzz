@@ -1,3 +1,6 @@
 target/*/bin/
 target/*/crash-*
 src/__pycache__/
+fuzzer*
+input/
+output/

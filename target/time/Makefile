@@ -7,6 +7,10 @@ run: mkbin lib
 lib: mkbin
 	clang++ time.cpp -shared -g -o ./bin/time
 
+# example afl++ instrumentation
+w_afl: mkbin
+	afl-clang-fast++ time.cpp -shared -g -o ./bin/time
+
 hand: mkbin lib
 	clang++ hand.cpp -std=c++17 -fsanitize=fuzzer,address -o ./bin/fuzzer ./bin/time && ./bin/fuzzer
 
