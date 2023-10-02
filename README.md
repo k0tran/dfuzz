@@ -88,3 +88,8 @@ $ afl-fuzz -V 60 -i input/ -o output/ -- ./fuzzer
 ```
 
 Crashes can be found in `output/default/crashes` and tested with `./fuzzer [path to crash]`
+
+## Requirments
+
+- AFL++/libFuzzer
+- python elftools
