@@ -1,3 +1,5 @@
+# See [classfuzzgen](https://github.com/k0tran/classfuzzgen)
+
 # DwarfFuzz
 
 This fuzzer aims to utilize [dwarf debugging format](https://dwarfstd.org/) for fuzzing purposes
